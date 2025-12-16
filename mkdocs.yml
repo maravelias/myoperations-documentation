@@ -1,0 +1,61 @@
+site_name: MyOperations Documentation
+site_description: Official documentation for the MyOperations project
+site_author: Documentation Automation Agent
+repo_url: https://example.com/myoperations
+copyright: Copyright &copy; 2025 - 2026 Giorgos Maravelias
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.sections
+    - content.code.copy
+    - toc.integrate
+    - content.code.annotate
+  palette:
+    - scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Switch to espresso mode
+    - scheme: espresso
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  icon:
+    repo: fontawesome/brands/github
+extra_css:
+  - styles/brand.css
+strict: true
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/maravelias/myoperations-app
+    - icon: fontawesome/brands/docker
+      link: https://hub.docker.com/
+plugins:
+  - search
+  - kroki:
+      ServerURL: https://kroki.io
+      HttpMethod: POST
+      FencePrefix: ""
+      FileTypes:
+        - svg
+markdown_extensions:
+  - admonition
+  - attr_list
+  - footnotes
+  - pymdownx.details
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+nav:
+  - Home: index.md
