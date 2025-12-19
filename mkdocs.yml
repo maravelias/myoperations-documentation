@@ -59,3 +59,17 @@ markdown_extensions:
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
 nav:
   - Home: index.md
+  - DevOps:
+      - Overview: devops/index.md
+      - Automation: devops/devops-automation.md
+      - Components:
+          - Postgres: devops/component-postgres.md
+          - pgAdmin: devops/component-pgadmin.md
+          - Keycloak: devops/component-keycloak.md
+          - SonarQube: devops/component-sonarqube.md
+          - Sonar DB: devops/component-sonar-db.md
+          - Prometheus: devops/component-prometheus.md
+          - Loki: devops/component-loki.md
+          - Grafana: devops/component-grafana.md
+          - MailHog: devops/component-mailhog.md
+          - Nginx: devops/component-nginx.md
